@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        ul, li{
+            list-style: none;
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            background-color: aliceblue;
+        }
+        .navi > ul {
+            display: flex;
+        }
+        .navi > ul > li{
+            width: calc(100% / 4);
+        }
+        /* a에 너비값을 주기 위해서는 block으로 바꿔줘야함 */
+        .navi > ul > li > a{
+            width: 100%;
+            padding: 10px 0;
+            display: block;
+            text-align: center;
+            color: skyblue;
+            background-color: beige;
+        }
+        .navi > ul > li > a:hover{
+            color: #fff;
+            background-color: cornflowerblue;
+        }
+        .navi > ul > li > a:focus{
+            background-color: pink;
+        }
+        .navi > ul > li > a:visited{
+            color: palevioletred;
+            text-decoration: underline;
+        }
+        .navi > ul > li > a:active{
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#">이용 안내</a></li>
+                <li><a href="#">예약 하기</a></li>
+                <li><a href="#">예약 방법 및 요금</a></li>
+                <li><a href="#">객실 소개</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

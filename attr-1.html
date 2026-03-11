@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급선택자_속성 선택</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul, li{
+            list-style: none;
+        }
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        ul{
+            width: 600px;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            background-color: mediumturquoise;
+        }
+        ul > li{
+            width: calc(100% / 5);
+            padding: 10px 0;
+            background-color: rgb(224, 221, 247);
+        }
+        /* 속성을 뜻하는 건 []로 표시 */
+        a[href]{
+            color: #fff;
+            /* background-color: rgb(245, 129, 167); */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴 :</a></li>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+</body>
+</html>
